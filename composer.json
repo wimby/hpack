@@ -1,0 +1,26 @@
+{
+    "$schema": "https://getcomposer.org/schema.json",
+    "name": "wimby/hpack",
+    "description": "Header Compression for HTTP/2 (RFC 7541) in PHP",
+    "type": "library",
+    "license": "WTFPL",
+    "require": {
+        "php": "^7.1"
+    },
+    "require-dev": {
+        "phpspec/phpspec": "^3.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Wimby\\H2\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "spec\\Wimby\\H2\\": "spec/"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpspec run"
+    }
+}
