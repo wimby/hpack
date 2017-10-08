@@ -8,19 +8,16 @@
         "php": "^7.1"
     },
     "require-dev": {
-        "phpspec/phpspec": "^3.4"
+        "phpspec/phpspec": "^3",
+        "leanphp/phpspec-code-coverage": "^3"
     },
     "autoload": {
         "psr-4": {
-            "Wimby\\H2\\": "src/"
-        }
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "spec\\Wimby\\H2\\": "spec/"
+            "Wimby\\Hpack\\": "src/"
         }
     },
     "scripts": {
-        "test": "vendor/bin/phpspec run"
+        "test": "vendor/bin/phpspec run",
+        "test-ci": "vendor/bin/phpspec run --format=dot"
     }
 }

@@ -1,0 +1,11 @@
+suites:
+    wimby_hpack_suite:
+        namespace: Wimby\Hpack
+        psr4_prefix: Wimby\Hpack
+
+extensions:
+    LeanPHP\PhpSpec\CodeCoverage\CodeCoverageExtension:
+        format: [clover, html]
+        output:
+            clover: build/logs/clover.xml
+            html: build/coverage
