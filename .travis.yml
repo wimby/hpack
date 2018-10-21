@@ -1,9 +1,12 @@
+env:
+    global:
+        - CC_TEST_REPORTER_ID=3ddb24a78e7cd3362b97058bafc441cb167caa51781cbf7cb5b3a62b145b56ff
+
 language: php
 
 php:
     - 7.1
-#    - 7.2
-#    - nightly
+    - 7.2
 
 install:
     - composer install
@@ -18,3 +21,4 @@ script:
 
 after_script:
     - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
+
